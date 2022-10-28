@@ -23,12 +23,11 @@ calculate:
     ldr x5, [x0, 32]    // x5 <-- &R
 
     mul x6, x1, x2      // x6 <-- A * B
-    mul x7, x3, x4      // x7 <-- C * D
-    add x8, x6, x7      // x8 <-- (A * B) + (C * D)
+    madd x7, x3, x4, x6 // x7 <-- C * D + (A * B)
 
-    str x8, [x5]
+    str x7, [x5]
 
-    mov x0, x8
+    mov x0, x7
 
     ret
 
