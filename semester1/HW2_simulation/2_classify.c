@@ -60,3 +60,10 @@ extern float_class_t classify(double* value_ptr)
     }
     return ans;
 }
+
+int main() {
+    double a = 1;
+    double b = 0;
+    a = a / b + a / b;
+    printf("%d", classify(&a));
+}
