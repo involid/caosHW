@@ -1,0 +1,21 @@
+-- The C compiler identification is GNU 12.2.1
+-- The CXX compiler identification is GNU 12.2.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found PkgConfig: /usr/bin/pkg-config (found version "1.8.1") 
+-- Checking for module 'fuse3'
+--   Found fuse3, version 3.14.1
+-- Configuring done (0.7s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/involid/mhernoc/caosHW/modul4/HW10/1/tests/build
+[ 50%] Building C object CMakeFiles/mergefs.dir/mergefs.c.o
+[100%] Linking C executable mergefs
+[100%] Built target mergefs

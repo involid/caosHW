@@ -1,0 +1,22 @@
+===== Test 1 =====
+Simple Class constructor called
+===== Test 2 =====
+Special Class constructor called
+Special Class Print with value 42
+Special Class destructor called
+===== Test 3 =====
+ClassInPackage() : 10
+GetValue() : 10
+10
+SetValue() : 50
+GetValue() : 50
+50
+~ClassInPackage() : 50
+===== Test 4 =====
+Example1
+===== Test 5 =====
+Example2
+===== Test 6 =====
+Example3
+===== Test 7 =====
+Example4

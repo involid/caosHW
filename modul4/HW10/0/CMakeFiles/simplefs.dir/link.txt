@@ -1,0 +1,1 @@
+/usr/bin/cc -rdynamic "CMakeFiles/simplefs.dir/inf-II-10-0.c.o" -o simplefs  -lfuse3 -lpthread 

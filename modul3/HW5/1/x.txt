@@ -1,0 +1,16 @@
+/home/involid/mhernoc/caosHW/modul3/HW5/1/input//A_send_file
+0
+/home/involid/mhernoc/caosHW/modul3/HW5/1/input//B_send_file
+0
+/home/involid/mhernoc/caosHW/modul3/HW5/1/input//C_send_file
+0
+/home/involid/mhernoc/caosHW/modul3/HW5/1/input//D_send_file
+-1
+/home/involid/mhernoc/caosHW/modul3/HW5/1/input//E_send_file
+-1
+/home/involid/mhernoc/caosHW/modul3/HW5/1/input//F_send_file
+-1
+/home/involid/mhernoc/caosHW/modul3/HW5/1/input//G_send_file
+0
+/home/involid/mhernoc/caosHW/modul3/HW5/1/input//H_send_file
+0

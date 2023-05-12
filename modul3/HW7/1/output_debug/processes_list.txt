@@ -1,0 +1,3 @@
+    PID TTY          TIME CMD
+ 288278 pts/1    00:00:00 run.sh
+ 288523 pts/1    00:00:00 ps

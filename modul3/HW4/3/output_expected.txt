@@ -1,0 +1,9 @@
+6
+5
+4
+3
+2
+1
+0
+404
+EXIT with return code 0

@@ -1,0 +1,12 @@
+child_pid 7299
+child_pid_read 7299
+-9
+-8
+-7
+7
+8
+-8
+-7
+-6
+-5
+EXIT with return code 0

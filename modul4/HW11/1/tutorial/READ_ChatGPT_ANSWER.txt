@@ -1,0 +1,63 @@
+Как при dynamic loading вызвать в С++ функцию _ZN12ExampleClass5PrintEib у созданного объекта
+соответствующего класса (имя функции с учётом манглинга)?
+
+Для вызова функции _ZN12ExampleClass5PrintEib у созданного объекта соответствующего класса
+при dynamic loading в C++ необходимо выполнить следующие шаги:
+1. Загрузить библиотеку, содержащую класс ExampleClass и функцию _ZN12ExampleClass5PrintEib,
+используя функцию dlopen.
+2. Получить указатель на функцию _ZN12ExampleClass5PrintEib, используя функцию dlsym.
+3. Создать объект класса ExampleClass, используя оператор new.
+4. Вызвать функцию _ZN12ExampleClass5PrintEib, передав объект класса ExampleClass в качестве
+параметра.
+
+Пример кода:
+
+c++
+#include <dlfcn.h>
+#include "ExampleClass.h"
+
+int main() {
+    // Загрузка библиотеки
+    void* handle = dlopen("libexample.so", RTLD_LAZY);
+    if (!handle) {
+        std::cerr << "Error loading library: " << dlerror() << std::endl;
+        return 1;
+    }
+
+    // Получение указателя на функцию
+    void (*printFunc)(ExampleClass*, int, bool) = (void (*)(ExampleClass*, int, bool)) dlsym(handle, "_ZN12ExampleClass5PrintEib");
+    if (!printFunc) {
+        std::cerr << "Error getting symbol: " << dlerror() << std::endl;
+        dlclose(handle);
+        return 1;
+    }
+
+    // Создание объекта класса
+    ExampleClass* obj = new ExampleClass();
+
+    // Вызов функции
+    printFunc(obj, 42, true);
+
+    // Освобождение ресурсов
+    delete obj;
+    dlclose(handle);
+
+    return 0;
+}
+
+В данном примере используется библиотека libexample.so, содержащая класс ExampleClass и функцию
+_ZN12ExampleClass5PrintEib. Функция dlopen загружает библиотеку, функция dlsym получает указатель на
+функцию, оператор new создает объект класса, а вызов функции осуществляется через полученный
+указатель на функцию. После выполнения программы необходимо освободить ресурсы, используя оператор
+delete для объекта класса и функцию dlclose для библиотеки.
+
+
+
+Чем отличаются _ZN11SimpleClassC1Ev и _ZN11SimpleClassC2Ev?
+
+Эти символы являются именами конструкторов класса SimpleClass в C++.
+_RN11SimpleClassC1Ev - это имя конструктора по умолчанию, который не принимает никаких аргументов.
+_RN11SimpleClassC2Ev - это имя копирующего конструктора, который также не принимает аргументов, но
+создает новый объект, используя данные из существующего объекта SimpleClass.
+Таким образом, различие между ними заключается в том, что первый создает новый объект без
+копирования данных, а второй создает новый объект, используя данные из существующего объекта.

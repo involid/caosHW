@@ -1,0 +1,9 @@
+0 sec: C
+1 sec: A D
+2 sec: C D D
+3 sec: B
+4 sec: A
+5 sec: A
+6 sec: C
+7 sec: C D
+8 sec: B D

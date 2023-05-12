@@ -1,0 +1,1 @@
+/usr/bin/cc -rdynamic CMakeFiles/exper.dir/exper.c.o -o exper  -lfuse3 -lpthread -lzip 

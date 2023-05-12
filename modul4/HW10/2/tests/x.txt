@@ -1,0 +1,15 @@
+/A/dir1/tmp1.txt
+/A/dir1/tmp2.txt
+/A/dir2/a.txt
+/A/dir2/tmp1.txt
+/A/y.txt
+/B/dir1/tmp1.txt
+/B/dir1/tmp3.txt
+/B/dir3/c.txt
+/B/dir3/d
+/B/dir3/e.txt
+/C/dir1/tmp1.txt
+/C/dir1/tmp3.txt
+/C/dir2/b.txt
+/C/dir2/tmp2.txt
+/x.txt
