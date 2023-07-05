@@ -1,3 +1,0 @@
-/home/involid/mhernoc/caosHW/modul4/HW10/exper/build/CMakeFiles/exper.dir
-/home/involid/mhernoc/caosHW/modul4/HW10/exper/build/CMakeFiles/edit_cache.dir
-/home/involid/mhernoc/caosHW/modul4/HW10/exper/build/CMakeFiles/rebuild_cache.dir

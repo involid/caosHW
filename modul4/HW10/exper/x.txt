@@ -1,3 +1,0 @@
-/x.txt
-/A/y.txt
-/A/dir1/tmp1.txt
