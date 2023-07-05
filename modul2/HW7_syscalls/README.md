@@ -12,7 +12,7 @@
 ```
 long syscall(long number, ...);
 ```
-Для локального тестирования можно взять реализацию syscall здесь: syscall.S.
+Для локального тестирования можно взять реализацию syscall здесь: [syscall.S](https://github.com/involid/caosHW/blob/master/modul2/HW7_syscalls/syscall.S).
 
 ## Problem 1
 Реализуйте на языке Си программу, которая копирует содержимое потока ввода на поток вывода.
@@ -26,7 +26,7 @@ long syscall(long number, ...);
 ```
 long syscall(long number, ...);
 ```
-Для локального тестирования можно взять реализацию syscall здесь: syscall.S.
+Для локального тестирования можно взять реализацию syscall здесь: [syscall.S](https://github.com/involid/caosHW/blob/master/modul2/HW7_syscalls/syscall.S).
 
 ## Problem 2
 Реализуйте на языке ассемблера x86_64 программу, которая копирует содержимое со стандартного потока ввода на стандартный поток вывода.
@@ -44,7 +44,7 @@ long syscall(long number, ...);
 
 Файл может не содержать перевода строки в конце.
 
-Examples
+### Examples
 Input
 
 ```
